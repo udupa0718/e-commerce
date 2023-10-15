@@ -1,0 +1,291 @@
+  @import url('https://fonts.googleapis.com/css2?family=Lugrasimo&family=Poppins:wght@200&display=swap');
+*{
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+}
+  /* Navbar */
+
+nav {
+  height: 4;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.507);
+  position: sticky;
+  top: 0%;
+  background-color: white;
+  z-index: 10000;
+}
+  
+.item1{
+  width: 20%;
+  display: flex;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  justify-content: center;
+}
+
+.item1>a{
+  text-decoration: none;
+  color: red;
+  font-size: 22px;
+}
+  
+.item1>a:hover{
+  color:chartreuse;
+  font-weight: bold;
+}
+
+.item2{
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-self: stretch;
+}
+  
+.item2>a{
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  
+.item2>a:hover{
+  border-bottom: 2px solid crimson;
+  color: crimson;
+}
+
+.item3{
+  width: 15%;
+  display: flex;
+  justify-content: center;
+}
+
+.item3>img{
+  width: 20px;
+  margin: 15px;
+  border-bottom: 2px;
+  cursor: pointer;
+}
+
+.item3>img:hover{
+  color:crimson;
+}
+/* Home */
+
+.home {
+  display: flex;
+  height: 550px;
+  background-image: radial-gradient(rgb(227, 221, 255), rgb(184, 184, 343));
+}
+
+.container{
+  width: 100%;
+}
+  
+#item1Container {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  box-sizing: border-box;
+  justify-content: center;
+}
+  
+#item1Container>h1 {
+  font-size: 50px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+#item1Container> h2 {
+  margin-top: -5%;
+  font-size: 30px;
+  font-family: sans-serif;
+}
+
+#item1Container>p {
+  margin-left: 0.5%;
+  font-size: 18px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+  
+#item1Container>button {
+  width: 120px;
+  padding: 10px;
+  margin-left: 1%;
+  border-radius: 25px;
+  border: none;
+  background-color: crimson;
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+  "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  cursor: pointer;
+}
+
+#item1Container>button:hover {
+  background-color:bisque;
+  color: rgba(177, 23, 54);;
+}
+
+#item3Container {
+  display: flex;
+  justify-content: flex-end;
+  width: 80%;
+}
+  
+#item3Container>img {
+  margin-right: 140px;
+  height: 500px;
+  transition: 1s;
+  position: absolute;
+  top: 50%;
+  left: 80%;
+  transform: translate(-54%,-46%);
+  image-resolution: inherit; 
+}
+
+  /* Products */
+
+#products>h1{
+  text-align: center;
+  margin: 50px auto;
+  font-size: 50px;
+  border-bottom: 4px solid crimson;
+  padding: 20px;
+  width: 230px;
+}
+
+#products>h1:hover{
+  color: blueviolet;
+}
+  
+.productsContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 110%;
+  max-width: 100%;
+  margin: 0%;
+}
+  
+.product{
+  transition: all 0.3s;
+  cursor: pointer;
+  border: 3px;
+  box-shadow:1px 2px 2px solid black;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3%;
+}
+
+.product>img {
+  width: 250px;
+}
+  
+.product>h4{
+  margin: 4%;
+}
+
+.product>h4:hover{
+  background-color: #000;
+  color:darkgrey;
+  cursor: pointer;
+}
+
+.product>h5{
+  margin: 0px;
+}
+
+.product>h5:hover{
+  background-color: blanchedalmond;
+}
+  
+.product:hover {
+  border: 10px;
+  box-shadow: 1px 1px 2px 3px #000;
+  transform: translateY(-10px);
+}
+  /* Footer */
+  
+footer {
+  margin-top: 120px;
+  padding: 2px;
+  background-color: rgb(34, 33, 33);
+  color: white;
+  display: flex;
+  align-items: center;
+}
+  
+.leftFooter {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+
+.leftFooter>h4{
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.leftFooter>p{
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+  "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.leftFooter>img {
+  width: 45%;
+  margin: 2%;
+  cursor: pointer;
+}
+  
+.midFooter{
+  width: 60%;
+  text-align: center;
+}
+  
+.midFooter>h1{
+  font-size: 75px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color:darkolivegreen;
+}
+
+.midFooter>h1:hover{
+  color: bisque;
+  box-shadow: 0px 1px 2px 3px #000;
+}
+
+.midFooter>p{
+  max-width: 50%;
+  margin: 5% auto;
+}
+  
+.rightFooter {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rightFooter>h4{
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+  margin-top: -7%;
+  text-decoration: underline;
+}
+
+.rightFooter>a{
+  text-decoration:dotted;
+  font-size: 17px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #fff;
+  margin: 4%;
+}
+.rightFooter>a:hover{
+  box-shadow: 0px 1px 2px 3px #000; 
+}
